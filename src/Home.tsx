@@ -4,6 +4,9 @@ import Countdown from "react-countdown";
 import { Button, CircularProgress, Snackbar } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
 
+import LogoImg from "./images/Logo.png";
+import BgPattern from "./images/BgPattern.png"
+
 import * as anchor from "@project-serum/anchor";
 
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
@@ -21,11 +24,70 @@ import {
 
 const ConnectButton = styled(WalletDialogButton)``;
 
-const CounterText = styled.span``; // add your styles here
+const CounterText = styled.span`
+
+`; // add your styles here
+
+const MainWrapper = styled.div`
+  display:flex;
+  justify-content:flex-start;
+  text-align:center;
+  flex-direction:column;
+  background-image: url(${BgPattern});
+  background-color: #000;
+  font-family: 'Press Start 2P', cursive;
+  height: 100vh;
+`; // add your styles here
+
+const MainContainer = styled.div`
+  margin-top: 25px;
+
+`; // add your styles here
+
+const MainH1 = styled.h1`
+    color: #fff;
+    font-size: 52px;
+    text-align: center;
+    padding-top: 0px;
+    margin: 40px;
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 22px;
+    }
+`; // add your styles here
+
+const MainH2 = styled.h2`
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 0px;
+    margin: 30px;
+    @media screen and (max-width: 768px) {
+        font-size: 35px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 17px;
+    }
+`; // add your styles here
+
+const MainH3 = styled.h3``; // add your styles here
+
+const LogoImage = styled.img`
+    height: 250px;
+    width: 250px;
+    margin-bottom: 10px;
+`; // add your styles here
 
 const MintContainer = styled.div``; // add your styles here
 
-const MintButton = styled(Button)``; // add your styles here
+const MintButton = styled(Button)`
+  padding: 50px;
+
+`; // add your styles here
 
 export interface HomeProps {
   candyMachineId: anchor.web3.PublicKey;
@@ -167,17 +229,14 @@ const Home = (props: HomeProps) => {
 
   return (
     <main>
-      {wallet && (
-        <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
-      )}
+  <MainWrapper>
+<MainH1>🎃 Sol O' Lanters 🎃</MainH1>
+<MainContainer>
+<LogoImage src={LogoImg} />
+<MainH2>Mint Only 0.2 Solana</MainH2>
+<MainH3>22 Oct. 7PM UTC</MainH3>
 
-      {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}
-
-      {wallet && <p>Total Available: {itemsAvailable}</p>}
-
-      {wallet && <p>Redeemed: {itemsRedeemed}</p>}
-
-      {wallet && <p>Remaining: {itemsRemaining}</p>}
+      {wallet && <p>{itemsRedeemed} / {itemsAvailable}</p>}
 
       <MintContainer>
         {!wallet ? (
@@ -207,7 +266,7 @@ const Home = (props: HomeProps) => {
           </MintButton>
         )}
       </MintContainer>
-
+    </MainContainer>
       <Snackbar
         open={alertState.open}
         autoHideDuration={6000}
@@ -220,6 +279,7 @@ const Home = (props: HomeProps) => {
           {alertState.message}
         </Alert>
       </Snackbar>
+      </MainWrapper>
     </main>
   );
 };
