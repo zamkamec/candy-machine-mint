@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
 import Countdown from "react-countdown";
 import { Button, CircularProgress, Snackbar } from "@material-ui/core";
@@ -100,9 +100,12 @@ export interface HomeProps {
 
 const Home = (props: HomeProps) => {
   const [balance, setBalance] = useState<number>();
-  const [isActive, setIsActive] = useState(false); // true when countdown completes
   const [isSoldOut, setIsSoldOut] = useState(false); // true when items remaining is zero
   const [isMinting, setIsMinting] = useState(false); // true when user got to press MINT
+
+  // compare start date and current date to decide display mint button or countdown
+  const [startDate, setStartDate] = useState(new Date(props.startDate));
+  const isLive = useMemo(() => startDate <= new Date(), [startDate]);
 
   const [itemsAvailable, setItemsAvailable] = useState(0);
   const [itemsRedeemed, setItemsRedeemed] = useState(0);
@@ -113,8 +116,6 @@ const Home = (props: HomeProps) => {
     message: "",
     severity: undefined,
   });
-
-  const [startDate, setStartDate] = useState(new Date(props.startDate));
 
   const wallet = useAnchorWallet();
   const [candyMachine, setCandyMachine] = useState<CandyMachine>();
@@ -229,27 +230,28 @@ const Home = (props: HomeProps) => {
 
   return (
     <main>
-  <MainWrapper>
-<MainH1>🎃 Sol O' Lanters 🎃</MainH1>
+        <MainWrapper>
+<MainH1>🎃 Sol O' Lanterns 🎃</MainH1>
 <MainContainer>
 <LogoImage src={LogoImg} />
-<MainH2>Mint Only 0.2 Solana</MainH2>
-<MainH3>22 Oct. 7PM UTC</MainH3>
+<MainH3>(PreSale)</MainH3>
+<MainH2>Mint Price 0.2 SOL</MainH2>
+<MainH3>{wallet && <p>{startDate.toUTCString()}</p>}</MainH3>
 
-      {wallet && <p>{itemsRedeemed} / {itemsAvailable}</p>}
+    {wallet && <p>{itemsRedeemed} / {itemsAvailable}</p>}
 
       <MintContainer>
         {!wallet ? (
           <ConnectButton>Connect Wallet</ConnectButton>
         ) : (
           <MintButton
-            disabled={isSoldOut || isMinting || !isActive}
+            disabled={isSoldOut || isMinting || !isLive}
             onClick={onMint}
             variant="contained"
           >
             {isSoldOut ? (
               "SOLD OUT"
-            ) : isActive ? (
+            ) : isLive ? (
               isMinting ? (
                 <CircularProgress />
               ) : (
@@ -258,15 +260,14 @@ const Home = (props: HomeProps) => {
             ) : (
               <Countdown
                 date={startDate}
-                onMount={({ completed }) => completed && setIsActive(true)}
-                onComplete={() => setIsActive(true)}
+                onComplete={() => refreshCandyMachineState()}
                 renderer={renderCounter}
               />
             )}
           </MintButton>
         )}
       </MintContainer>
-    </MainContainer>
+      </MainContainer>
       <Snackbar
         open={alertState.open}
         autoHideDuration={6000}
