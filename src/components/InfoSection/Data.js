@@ -5,7 +5,7 @@ export const homeObjOne = {
     lightTextDesc: false,
     topLine: "Sol O' Lanters",
     headline: 'About Us',
-    description: "Sol O' Lanterns are a collection of 9999 randomly generated Jack O' Lanterns with hundreds of variables stored on Solana ecosystem. Every Sol O' Lantern is randomly generated and unique. You don't have to go knocking on doors for trick or treating anymore, because the best treat is here to make it's debut to NFT world! Sol O' Lanterns came to life to become mascots of the Halloween.",
+    description: "Sol O' Lanterns are a collection of 966 randomly generated Jack O' Lanterns with hundreds of variables stored on Solana ecosystem. Every Sol O' Lantern is randomly generated and unique. You don't have to go knocking on doors for trick or treating anymore, because the best treat is here to make it's debut to NFT world! Sol O' Lanterns came to life to become mascots of the Halloween.",
     buttonLabel: 'Get Started',
     imgStart: true,
     img: require('../../gifs/NFTready.gif').default,

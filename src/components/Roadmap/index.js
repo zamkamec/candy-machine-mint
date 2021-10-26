@@ -23,17 +23,13 @@ function Roadmap() {
             <RoadmapCard2>
                 <RoadmapP>We will be launching our NFT’s for sale on our website soon after you can buy/sell Sol O’ Lanterns NFT’s at Digital Eyes Marketplace. We are also working on partnering up with other marketplaces at the moment. We are willing to work continuously to make sure that our community succeeds!</RoadmapP>
             </RoadmapCard2>
-            <RoadmapTitleCard><RoadmapH2>45% 2310$ Giveaway</RoadmapH2></RoadmapTitleCard>
-            <RoadmapCard>
-                <RoadmapP>We want to giveaway 2310$ to 1 lucky Sol O' Lanterns minter, we want to make minting a Sol O' Lanterns NFT as rewarding as possible. Minters do not have to sign a form or join a special channel. Winner of the raffle will be announced as soon as the minting finishes.</RoadmapP>
-            </RoadmapCard>
             <RoadmapTitleCard><RoadmapH2>50% Pumpkin carving event!</RoadmapH2></RoadmapTitleCard>
             <RoadmapCard>
                 <RoadmapP>As Halloween approaches we would like to organize a pumpkin carving event and see the pumpkins that our community carves! Best pumpkins will get a NFT and more.</RoadmapP>
             </RoadmapCard>
             <RoadmapTitleCard><RoadmapH2>55% The best look on the metaverse!</RoadmapH2></RoadmapTitleCard>
             <RoadmapCard>
-                <RoadmapP>We will throw a costume contest between 31.10.2021–1.11.2021. The best costume our team choses will get a 3SOL prize.</RoadmapP>
+                <RoadmapP>We will throw a costume contest between 31.10.2021–1.11.2021. The best costume our team choses will get a 1SOL prize.</RoadmapP>
             </RoadmapCard>
             <RoadmapTitleCard><RoadmapH2>75% More NFT’s</RoadmapH2></RoadmapTitleCard>
             <RoadmapCard>

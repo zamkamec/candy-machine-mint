@@ -1,7 +1,7 @@
 export const Data = [
     {
         question: "How many Sol O' Lanterns NFTs will there be available to purchase?",
-        answer: '9,999'
+        answer: '966'
     },
     {
         question: "How much will it cost to mint one Sol O' Lanterns NFT? ",
@@ -10,10 +10,6 @@ export const Data = [
     {
         question: "When will I be able to mint Sol O' NFTs?",
         answer: "Sol O' Lanterns are going to be available at 23.10.2021 7PM UTC"
-    },
-    {
-        question: "Is there a limit to how many I can mint?",
-        answer: 'Yes there is a mint limit. That is 10 NFTs per wallet.'
     },
     {
         question: "Will there be a pre-sale event?",
@@ -25,7 +21,7 @@ export const Data = [
     },
     {
         question: "Where can I sell my Sol O' Lanterns NFTs?",
-        answer: 'We are FTX approved you can sell your NFTs at FTX NFT martketplace and also you can easily sell your NFTs at "Digital Eyes" marketplace.'
+        answer: 'We are FTX approved you can sell your NFTs at FTX NFT Martketplace and also you can easily sell your NFTs at Digital Eyes Marketplace, Grail Marketplace and Magic Eden when our public mint ends.'
     },
     {
         question: "How can I seek help if I have a problem with something?",
