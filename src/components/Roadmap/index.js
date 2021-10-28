@@ -34,11 +34,19 @@ function Roadmap() {
             <RoadmapTitleCard><RoadmapH2>75% More NFT’s</RoadmapH2></RoadmapTitleCard>
             <RoadmapCard>
                 <RoadmapP>This years trick or treat is nothing like you have seen before. We will be airdropping our NFT holders at 31.10.2021 some candy NFTs that has it’s own rarities they will drop randomly, for every Sol O’Lanterns NFT you hold, you will get a “Sol O’ Lanterns Candy” NFT.
-                    <br />In addition to Sol O’ Lanterns we have plans to create other seasonal NFTs as a team. Our NFT holders will be airdropped these new NFTs so there is even more reason to hold Sol O’ Lanterns NFTs and be a part of the community.</RoadmapP>
+                    <br />We are creating more seasonal NFTs to make people celebrate the holidays with us on metaverse.  Our NFT holders are eligible to get whitelisted on the future projects and they can benefit the other projects' opportunities. If we shed some more light on the subject; for example: We are going to start creating a  Christmas project and both projects' holders will join the same DAO and we will keep growing as the seasons pass by.</RoadmapP>
             </RoadmapCard>
-            <RoadmapTitleCard><RoadmapH2>90% PUMPKIN DAO CONSTRUCTION</RoadmapH2></RoadmapTitleCard>
+            <RoadmapTitleCard><RoadmapH2>90% SEASONS DAO CONSTRUCTION</RoadmapH2></RoadmapTitleCard>
             <RoadmapCard>
-                <RoadmapP>We will create a "Decentralized Autonomous Organization" (DAO) and use the 5% of the sales income to buy Sol O' Lanterns, burn them and make the collection more valuable to every holder. All the money saved from royalties will stay at pumpkin patch and used with peoples votes.</RoadmapP>
+                <RoadmapP><br />Joint DAO:
+                The reason of creating this DAO to make our seasonal NFT project holders to  interact with each other and to create a joint community that grows with every project as population and financially both. As the DAO community population keeps growing we will reach to more audience and we want to bring more people into Solana ecosystem and to our community. We are going to educate the people with no DAO experience & new comers all together and the experienced community members & most active members will get roles on the Joint DAO to carry the organisation even further on the Solana ecosystem. With this approach there's room for everybody to join & learn so we are not a community of one project but many.
+                We’ve chosen to adopt the “Community-First” approach as laid out by Metacartel
+                <br />Values;
+
+                <br />Transparency – all decisions and actions will happen in a public forum and will be recorded for posterity whenever possible
+                <br />Fairness – everyone has an equal chance to participate and be acknowledged
+                <br />Excellence – we will hold each other to the highest standards and voice our opinions frequently as it is our duty
+                </RoadmapP>
             </RoadmapCard>
             <RoadmapTitleCard><RoadmapH2>100% Going on a trip!</RoadmapH2></RoadmapTitleCard>
             <RoadmapCard>
