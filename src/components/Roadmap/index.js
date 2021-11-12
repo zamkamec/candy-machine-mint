@@ -23,14 +23,14 @@ function Roadmap() {
             <RoadmapCard2>
                 <RoadmapP>We will be launching our NFT’s for sale on our website soon after you can buy/sell Sol O’ Lanterns NFT’s at Digital Eyes Marketplace. We are also working on partnering up with other marketplaces at the moment. We are willing to work continuously to make sure that our community succeeds!</RoadmapP>
             </RoadmapCard2>
-            <RoadmapTitleCard><RoadmapH2>50% Pumpkin carving event!</RoadmapH2></RoadmapTitleCard>
-            <RoadmapCard>
+            <RoadmapTitleCard2><RoadmapH2>50% Pumpkin carving event!</RoadmapH2></RoadmapTitleCard2>
+            <RoadmapCard2>
                 <RoadmapP>As Halloween approaches we would like to organize a pumpkin carving event and see the pumpkins that our community carves! Best pumpkins will get a NFT and more.</RoadmapP>
-            </RoadmapCard>
-            <RoadmapTitleCard><RoadmapH2>55% The best look on the metaverse!</RoadmapH2></RoadmapTitleCard>
-            <RoadmapCard>
+            </RoadmapCard2>
+            <RoadmapTitleCard2><RoadmapH2>55% The best look on the metaverse!</RoadmapH2></RoadmapTitleCard2>
+            <RoadmapCard2>
                 <RoadmapP>We will throw a costume contest between 31.10.2021–1.11.2021. The best costume our team choses will get a 1SOL prize.</RoadmapP>
-            </RoadmapCard>
+            </RoadmapCard2>
             <RoadmapTitleCard><RoadmapH2>75% More NFT’s</RoadmapH2></RoadmapTitleCard>
             <RoadmapCard>
                 <RoadmapP>This years trick or treat is nothing like you have seen before. We will be airdropping our NFT holders at 31.10.2021 some candy NFTs that has it’s own rarities they will drop randomly, for every Sol O’Lanterns NFT you hold, you will get a “Sol O’ Lanterns Candy” NFT.
